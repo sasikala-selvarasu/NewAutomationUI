@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28993" started-at="2019-06-12T09:31:51Z" finished-at="2019-06-12T09:32:20Z">
+  <suite name="Suite" duration-ms="21828" started-at="2019-06-12T11:14:40Z" finished-at="2019-06-12T11:15:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28993" started-at="2019-06-12T09:31:51Z" finished-at="2019-06-12T09:32:20Z">
-      <class name="testcases.TC001Login">
-        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.TC001Login@7a30d1e6]" name="setData" is-config="true" duration-ms="16" started-at="2019-06-12T09:31:51Z" finished-at="2019-06-12T09:31:51Z">
+    <test name="Test" duration-ms="21828" started-at="2019-06-12T11:14:40Z" finished-at="2019-06-12T11:15:01Z">
+      <class name="testcases.TC002Login">
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.TC002Login@7a30d1e6]" name="setData" is-config="true" duration-ms="17" started-at="2019-06-12T11:14:40Z" finished-at="2019-06-12T11:14:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.TC001Login@7a30d1e6]" name="login" is-config="true" duration-ms="4517" started-at="2019-06-12T09:31:52Z" finished-at="2019-06-12T09:31:56Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.TC002Login@7a30d1e6]" name="login" is-config="true" duration-ms="4671" started-at="2019-06-12T11:14:41Z" finished-at="2019-06-12T11:14:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="loginLogout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC001Login@7a30d1e6]" name="loginLogout" duration-ms="21354" started-at="2019-06-12T09:31:56Z" data-provider="fetchData" finished-at="2019-06-12T09:32:18Z">
+        <test-method status="FAIL" signature="loginLogout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002Login@7a30d1e6]" name="loginLogout" duration-ms="16003" started-at="2019-06-12T11:14:45Z" data-provider="fetchData" finished-at="2019-06-12T11:15:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://10.130.35.25:100/modules/olap/#/login]]>
+                <![CDATA[http://10.130.35.25:100/modules/olapv3/]]>
               </value>
             </param>
             <param index="1">
@@ -34,7 +34,7 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Attrib And Risk Report,AL HY Fixed Income Attribution]]>
+                <![CDATA[Attrib And Risk Report, AL HY Fixed Income Attribution]]>
               </value>
             </param>
             <param index="4">
@@ -47,15 +47,91 @@
                 <![CDATA[3000,10000]]>
               </value>
             </param>
+            <param index="6">
+              <value>
+                <![CDATA[4 Level Model1]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[testsasiURL]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[testkey]]>
+              </value>
+            </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <span _ngcontent-c21="" aria-describedby="cdk-describedby-message-0" cdk-describedby-host="">...</span> is not clickable at point (147, 672). Other element would receive the click: <div _ngcontent-c73="" class="spinnerAccMask ng-star-inserted">...</div>
+  (Session info: chrome=74.0.3729.108)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 58 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SSELVARASUW8', ip: '10.80.8.174', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\SSELVA~1\AppData\Local\Temp\scoped_dir12980_22703}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=74.0.3729.108, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0912e68f730f39d19797fd49d1c68594]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <span _ngcontent-c21="" aria-describedby="cdk-describedby-message-0" cdk-describedby-host="">...</span> is not clickable at point (147, 672). Other element would receive the click: <div _ngcontent-c73="" class="spinnerAccMask ng-star-inserted">...</div>
+  (Session info: chrome=74.0.3729.108)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 58 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SSELVARASUW8', ip: '10.80.8.174', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\SSELVA~1\AppData\Local\Temp\scoped_dir12980_22703}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=74.0.3729.108, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0912e68f730f39d19797fd49d1c68594
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+at pages.HomePage.ClickOnInbox(HomePage.java:18)
+at testcases.TC002Login.loginLogout(TC002Login.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLogout -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC001Login@7a30d1e6]" name="closeBrowser" is-config="true" duration-ms="2081" started-at="2019-06-12T09:32:18Z" finished-at="2019-06-12T09:32:20Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC002Login@7a30d1e6]" name="closeBrowser" is-config="true" duration-ms="70" started-at="2019-06-12T11:15:01Z" finished-at="2019-06-12T11:15:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testcases.TC001Login -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testcases.TC002Login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
