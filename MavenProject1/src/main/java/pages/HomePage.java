@@ -13,6 +13,7 @@ public class HomePage extends Annotations {
 	
 	
 	static boolean ClickReport = true; 
+	//testing
 	
 	public HomePage ClickOnInbox() {
 		driver.findElementByXPath("//span[text()='Inbox'][1]").click();
