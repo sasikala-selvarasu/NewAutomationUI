@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="21828" started-at="2019-06-12T11:14:40Z" finished-at="2019-06-12T11:15:01Z">
+  <suite name="Suite" duration-ms="16894" started-at="2019-06-12T12:59:43Z" finished-at="2019-06-12T13:00:00Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="21828" started-at="2019-06-12T11:14:40Z" finished-at="2019-06-12T11:15:01Z">
+    <test name="Test" duration-ms="16894" started-at="2019-06-12T12:59:43Z" finished-at="2019-06-12T13:00:00Z">
       <class name="testcases.TC002Login">
-        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.TC002Login@7a30d1e6]" name="setData" is-config="true" duration-ms="17" started-at="2019-06-12T11:14:40Z" finished-at="2019-06-12T11:14:40Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.TC002Login@7a30d1e6]" name="setData" is-config="true" duration-ms="19" started-at="2019-06-12T12:59:43Z" finished-at="2019-06-12T12:59:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.TC002Login@7a30d1e6]" name="login" is-config="true" duration-ms="4671" started-at="2019-06-12T11:14:41Z" finished-at="2019-06-12T11:14:45Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.TC002Login@7a30d1e6]" name="login" is-config="true" duration-ms="4665" started-at="2019-06-12T12:59:44Z" finished-at="2019-06-12T12:59:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="loginLogout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002Login@7a30d1e6]" name="loginLogout" duration-ms="16003" started-at="2019-06-12T11:14:45Z" data-provider="fetchData" finished-at="2019-06-12T11:15:01Z">
+        <test-method status="FAIL" signature="loginLogout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002Login@7a30d1e6]" name="loginLogout" duration-ms="10995" started-at="2019-06-12T12:59:49Z" data-provider="fetchData" finished-at="2019-06-12T13:00:00Z">
           <params>
             <param index="0">
               <value>
@@ -63,28 +63,32 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.WebDriverException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[unknown error: Element <span _ngcontent-c21="" aria-describedby="cdk-describedby-message-0" cdk-describedby-host="">...</span> is not clickable at point (147, 672). Other element would receive the click: <div _ngcontent-c73="" class="spinnerAccMask ng-star-inserted">...</div>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='mat-tab-link ng-star-inserted' and text()=' Analyse ']"}
   (Session info: chrome=74.0.3729.108)
   (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 58 milliseconds
+Command duration or timeout: 5.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'SSELVARASUW8', ip: '10.80.8.174', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\SSELVA~1\AppData\Local\Temp\scoped_dir12980_22703}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=74.0.3729.108, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 0912e68f730f39d19797fd49d1c68594]]>
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\SSELVA~1\AppData\Local\Temp\scoped_dir5224_20781}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=74.0.3729.108, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 6562929c1351ff2db3bc8c45eb94819f
+*** Element info: {Using=xpath, value=//div[@class='mat-tab-link ng-star-inserted' and text()=' Analyse ']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <span _ngcontent-c21="" aria-describedby="cdk-describedby-message-0" cdk-describedby-host="">...</span> is not clickable at point (147, 672). Other element would receive the click: <div _ngcontent-c73="" class="spinnerAccMask ng-star-inserted">...</div>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='mat-tab-link ng-star-inserted' and text()=' Analyse ']"}
   (Session info: chrome=74.0.3729.108)
   (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 58 milliseconds
+Command duration or timeout: 5.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'SSELVARASUW8', ip: '10.80.8.174', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\SSELVA~1\AppData\Local\Temp\scoped_dir12980_22703}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=74.0.3729.108, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 0912e68f730f39d19797fd49d1c68594
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab), userDataDir=C:\Users\SSELVA~1\AppData\Local\Temp\scoped_dir5224_20781}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=74.0.3729.108, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 6562929c1351ff2db3bc8c45eb94819f
+*** Element info: {Using=xpath, value=//div[@class='mat-tab-link ng-star-inserted' and text()=' Analyse ']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -92,10 +96,10 @@ at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
-at pages.HomePage.ClickOnInbox(HomePage.java:18)
-at testcases.TC002Login.loginLogout(TC002Login.java:36)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+at pages.HomePage.ClickonAnalyse(HomePage.java:58)
+at testcases.TC002Login.loginLogout(TC002Login.java:38)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -123,11 +127,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLogout -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC002Login@7a30d1e6]" name="closeBrowser" is-config="true" duration-ms="70" started-at="2019-06-12T11:15:01Z" finished-at="2019-06-12T11:15:01Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC002Login@7a30d1e6]" name="closeBrowser" is-config="true" duration-ms="98" started-at="2019-06-12T13:00:00Z" finished-at="2019-06-12T13:00:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
