@@ -23,10 +23,11 @@ public class LoginPage extends Annotations {
 			return this;
 		}
 		
-		public HomePage clickLoginButton() throws InterruptedException {
+		public LoginPage clickLoginButton() throws InterruptedException {
 			driver.findElementByXPath("//span[text()='Log In']").click();
 			Thread.sleep(3000);
-			return new HomePage();
+			//return new HomePage();
+			return this;
 		
 		}
 		
