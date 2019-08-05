@@ -1,22 +1,28 @@
 package testcases;
 
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import pages.ChartsPage;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.ReportResultPage;
+import pages.ReportTabpage;
 import pages.ResultPage;
 import wrappers.Annotations;
 
 public class TC001Login extends Annotations {
-
+	Boolean bEditMode ;
 	@BeforeTest
 	public void setData() {
 		excelFileName = "TC001";
 	
 	}
 	@Test(dataProvider = "fetchData")
-	public void loginLogout(String Url, String userName, String password, String ReportNames, String ExpectedStrs, String  Timeouts) throws InterruptedException {
+	public void loginLogout(String Url, String userName, String password, String ReportNames, String ExpectedStrs, String  Timeouts,String ReportsTabReport, String URL, String Key, String fileWithPath) throws InterruptedException, IOException {
 		
 		new LoginPage()
 		.enterUrl(Url)
@@ -27,19 +33,45 @@ public class TC001Login extends Annotations {
 		 String[] result = ReportNames.split(",");
 		 String[] expResults = ExpectedStrs.split(",");
 		 String[] TimeOut = Timeouts.split(",");
-	     for (int x=0; x<result.length; x++) {
-		    //System.out.println();
+		 
+	     //for (int x=0; x<result.length; x++) {
+		  
+	    	 
+	        //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//	new HomePage()
+		//	.ClickOnInbox()
+		//	.ClickonReport(result[x])
+		//	.ClickonAnalyse();
+			
+			//Thread.sleep(Integer.parseInt(TimeOut[x]) );
+			
+			
+			//	new ResultPage()
+			//.CheckTextCommentary(expResults[x])
+		//	.ClickGoCharts();
+			//.CloseReportTab();
+			
+		//	new ChartsPage()
+			//	.ClickCharts(fileWithPath);
+			
+			
+			//	new ReportTabpage()
+			//.ClickOnReports()
+			//.ClickOnReportTabReport(ReportsTabReport);
+			//bEditMode = true;
+			//new ReportResultPage()
+			//.CommentarySetGet(bEditMode, URL, Key);
+			
+			//Thread.sleep(Integer.parseInt(TimeOut[x]) );
 
-			new HomePage()
-			.ClickOnInbox()
-			.ClickonReport(result[x])
-			.ClickonAnalyse();
+			//new ReportTabpage()
+			//.ClickOnReports()
+			//.ClickOnReportTabReport(ReportsTabReport);
+			//bEditMode = false;
+			//new ReportResultPage()
+//			.CommentarySetGet(bEditMode, URL, Key);
 			
-			Thread.sleep(Integer.parseInt(TimeOut[x]) );
-			
-			new ResultPage()
-			.CheckTextCommentary(expResults[x])
-			.CloseReportTab();
-		}
+			//driver.close();
+		//}
 	}
 }
