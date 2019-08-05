@@ -23,7 +23,7 @@ public class Annotations  {
 	}
 	@AfterMethod
 	public void closeBrowser() {
-	driver.close();
+		driver.close();
 	}
 	@DataProvider(name="fetchData")
 	public String[][] getData() throws InvalidFormatException, IOException{
