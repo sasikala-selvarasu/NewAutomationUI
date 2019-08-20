@@ -14,13 +14,25 @@ public class LoginPage extends Annotations {
 		}
 	
 		public LoginPage enterUserName(String data) {
-			driver.findElementByXPath("//input[@formcontrolname='username']").sendKeys(data);
-			return this;
+			//if(data == "mgoodey") {
+				driver.findElementByXPath("//input[@formcontrolname='username']").sendKeys(data);
+				return this;
+			/*}
+			else {
+				System.out.println("Invalid User name");
+			}
+			return null;*/
 		}
 		
 		public LoginPage enterPassword(String data) {
+			//if(data == "eagle1") {
 			driver.findElementByXPath("//input[@formcontrolname='password']").sendKeys(data);
 			return this;
+			/*}
+			else {
+				System.out.println("Invalid Password");
+			}
+			return null;*/
 		}
 		
 		public LoginPage clickLoginButton() throws InterruptedException {
