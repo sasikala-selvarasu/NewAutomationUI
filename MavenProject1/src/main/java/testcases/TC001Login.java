@@ -1,16 +1,17 @@
-package testcases;
+ package testcases;
 
 import java.io.IOException;
-//import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
+import pages.LogicBuilder;
 import wrappers.Annotations;
 
 //import pages.ChartsPage;
-//import pages.HomePage;
+import pages.HomePage;
 //import pages.LoginPage;
 //import pages.ReportResultPage;
 //import pages.ReportTabpage;
@@ -33,22 +34,26 @@ public class TC001Login extends Annotations {
 		.enterPassword(password)
 		.clickLoginButton();
 		
-		// String[] result = ReportNames.split(",");
-		// String[] expResults = ExpectedStrs.split(",");
-		// String[] TimeOut = Timeouts.split(",");
+		 String[] result = ReportNames.split(",");
+		 String[] expResults = ExpectedStrs.split(",");
+		 String[] TimeOut = Timeouts.split(",");
 		 
-	     //for (int x=0; x<result.length; x++) {
+	     for (int x=0; x<result.length; x++) {
 		  
 	    	 
-	        //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		//	new HomePage()
-		//	.ClickOnInbox()
-		//	.ClickonReport(result[x])
+	        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	        new HomePage()
+			.ClickOnInbox()
+			.ClickonReport(result[x]);
 		//	.ClickonAnalyse();
 			
 			//Thread.sleep(Integer.parseInt(TimeOut[x]) );
 			
 			
+	         new LogicBuilder()
+	         .doCalculation()
+	         .LogicbuilderPage();
+	        
 			//	new ResultPage()
 			//.CheckTextCommentary(expResults[x])
 		//	.ClickGoCharts();
@@ -77,4 +82,5 @@ public class TC001Login extends Annotations {
 			//driver.close();
 		//}
 	}
+}
 }
