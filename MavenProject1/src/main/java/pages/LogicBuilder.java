@@ -24,6 +24,7 @@ public class LogicBuilder extends Annotations {
 	}
 	
 	public LogicBuilder LogicbuilderPage() throws InterruptedException {
+		driver.findElementByXPath("//button[text()='Create New']").click();
 		driver.findElementByXPath("//button[@class='egl-value-icon clauseTile egl-disable']/child::span[text()='IF']").click();
 		Thread.sleep(4000);
 		driver.findElementByXPath("//em[@class='pi pi-plus'][1]").click();
@@ -59,6 +60,8 @@ public class LogicBuilder extends Annotations {
 
 		
 		driver.findElementByXPath("//span[text()='(A+B)']").click();
+		driver.findElementByXPath("//button[@class='headerButtons closeButtons']").click();
+		
 		Thread.sleep(4000);
 		driver.findElementByXPath("//em[@class='pi pi-plus'][1]").click();
 		driver.findElementByXPath("//span[text()='=']").click();
@@ -88,6 +91,8 @@ public class LogicBuilder extends Annotations {
 		driver.findElementByXPath("//input[starts-with(@class, 'egl-logic-input-control')]").sendKeys("100");
 
 		driver.findElementByXPath("//span[text()='(A+B)']").click();
+		driver.findElementByXPath("//button[@class='headerButtons closeButtons']").click();
+		
 		Thread.sleep(5000);
 				
 

@@ -7,7 +7,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
-import pages.LogicBuilder;
+//import pages.LogicBuilder;
+import pages.LogicBuilder2;
 import wrappers.Annotations;
 
 //import pages.ChartsPage;
@@ -22,7 +23,7 @@ public class TC001Login extends Annotations {
 	Boolean bEditMode ;
 	@BeforeTest
 	public void setData() {
-		excelFileName = "TC001";
+		excelFileName = "TC001 - Copy";
 	
 	}
 	@Test(dataProvider = "fetchData")
@@ -50,9 +51,10 @@ public class TC001Login extends Annotations {
 			//Thread.sleep(Integer.parseInt(TimeOut[x]) );
 			
 			
-	         new LogicBuilder()
-	         .doCalculation()
-	         .LogicbuilderPage();
+	         //new LogicBuilder()
+	           new LogicBuilder2()	                    
+	           .doCalculation()
+	           .LogicbuilderPage();
 	        
 			//	new ResultPage()
 			//.CheckTextCommentary(expResults[x])
