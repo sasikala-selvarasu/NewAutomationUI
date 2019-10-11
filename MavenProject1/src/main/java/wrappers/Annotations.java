@@ -21,9 +21,9 @@ public class Annotations  {
 //	driver.get("http://10.130.35.25:100/modules/olap/#/login");
 //	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void closeBrowser() {
-		driver.close();
+	driver.quit();
 	}
 	@DataProvider(name="fetchData")
 	public String[][] getData() throws InvalidFormatException, IOException{

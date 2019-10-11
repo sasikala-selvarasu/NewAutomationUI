@@ -5,7 +5,7 @@
     <classes>
       <class name="testcases.TC001Login">
         <methods>
-          <include name="loginLogout"/>
+          <include name="loginLogout" invocation-numbers="0"/>
           <include name="login"/>
           <include name="closeBrowser"/>
           <include name="setData"/>

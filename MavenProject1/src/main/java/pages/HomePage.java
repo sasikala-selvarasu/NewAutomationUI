@@ -9,13 +9,12 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
 import wrappers.Annotations;
 
 public class HomePage extends Annotations {
 	
 	
-	static boolean ClickReport = true; 
+	static boolean ClickReport = false; 
 
 	
 	public HomePage ClickOnInbox() {
@@ -31,23 +30,36 @@ public class HomePage extends Annotations {
 		return this;
 		
 	}
-	public LogicBuilder ClickonReport(String data) throws InterruptedException {
+	public HomePage ClickonReport(String data) throws InterruptedException {
 		
 		String lookVal = "//div[@class='eagle-status-completed']/following::span[text()='"+data+"'][1]";
+		System.out.println(lookVal);
+		Thread.sleep(4000);
 		
-		////div[@class='eagle-status-completed']/following::span[text()='Attrib and Risk Report'][1]
 		Actions builder = new Actions(driver);
 		WebElement elementLocator = driver.findElementByXPath(lookVal);
-		if(ClickReport ==true) {						
-			builder.click(elementLocator).perform();
-			driver.findElementByXPath("//mat-icon[@class='mat-icon material-icons' and text()='more_horiz']").click();
+		if(ClickReport ==true) {	
+			//builder.click(elementLocator).perform();
+			elementLocator.click ();
+						
+			WebElement element = driver.findElementByXPath("//mat-icon[text()='more_horiz']");
+			Thread.sleep(8000);
+			element.click();
+
+	//		WebDriverWait wait2 = new WebDriverWait(driver, 10);
+		//	WebElement tofindElement =wait2.until(ExpectedConditions.visibilityOf(driver.findElementByXPath("//mat-icon[@class='mat-icon material-icons' and text()='more_horiz']")));
+		//	tofindElement.click();
+	
+			
+			//driver.findElementByXPath("//mat-icon[@class='mat-icon material-icons' and text()='more_horiz']").click();
 			driver.findElementByXPath("//span[text()='View']").click();
 			ClickReport = false;
 		}
 		else {
 		
+			System.out.println("Inside click report == false");
 			builder.doubleClick(elementLocator).perform();
-			ClickReport = true;
+//			ClickReport = true;
 		}
 		List<WebElement> findElements = driver.findElements(By.xpath("//div[@role='row']"));
 		if(findElements.size() >=1) {
@@ -61,7 +73,8 @@ public class HomePage extends Annotations {
 		//assertEquals(data, "M2_PrototypeWithChart");
 		System.out.println("trying to click the tabs");
 		System.out.println(data);
-		if(data.equals("M2_PrototypeWithChart")){			
+		//if(data.equals("M2_PrototypeWithChart")){
+		if(data.equals("Attrib And Risk Report")){	
 			System.out.println("It is clicked the first tab");
 			System.out.println("Now going to check the logic builder cases");
 		
@@ -89,16 +102,19 @@ public class HomePage extends Annotations {
 									
 		}		
 
-		//return this;
-		  return new LogicBuilder(); 
+		return this;
+		  //return new LogicBuilder(); 
 		
 	}
-	public ResultPage ClickonAnalyse() {
+	
+	
+	public HomePage ClickonAnalyse() {
 		
 		
 		driver.findElementByXPath("//div[text()=' Analyse ']").click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		return new ResultPage();
+		System.out.println("Clicked the ANALYSE Link on top");
+		return this;
 	
 	}
 	

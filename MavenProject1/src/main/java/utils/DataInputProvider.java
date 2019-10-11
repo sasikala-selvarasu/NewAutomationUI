@@ -11,7 +11,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class DataInputProvider {
 	public static String[][] readExcel(String fileName) throws InvalidFormatException, IOException {
-		XSSFWorkbook workbook = new XSSFWorkbook(new File("./data/" + fileName + ".xlsx"));
+		XSSFWorkbook workbook = new XSSFWorkbook(new File("C:\\GitRepo\\MavenProject1\\data\\" + fileName + ".xlsx"));
 		XSSFSheet worksheet = workbook.getSheetAt(0);
 		int rowCount = worksheet.getLastRowNum();
 		int cellCount = worksheet.getRow(0).getLastCellNum();

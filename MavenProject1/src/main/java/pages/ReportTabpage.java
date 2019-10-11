@@ -12,6 +12,7 @@ public class ReportTabpage extends Annotations {
 		String Reporttab = driver.getCurrentUrl();
 		System.out.println("The current page url is: " + Reporttab);
 		System.out.println("Successfully clicked the ReportTab");
+		System.out.println("***********************************");
 		return this;
 						
 	}

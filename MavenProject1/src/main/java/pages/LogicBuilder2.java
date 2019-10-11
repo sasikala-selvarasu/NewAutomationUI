@@ -1,7 +1,9 @@
 package pages;
 
 import java.io.IOException;
+import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -15,10 +17,36 @@ public class LogicBuilder2 extends Annotations {
 		
 		System.out.println("Logic builder concepts");
 		Actions builder = new Actions(driver);
-		WebElement elementLocator = driver.findElementByXPath("//span[@class='ag-group-value'][1]");
-		builder.contextClick(elementLocator).perform();
-		driver.findElementByXPath("//span[text()='View Logic']").click();
-		Thread.sleep(3000);
+		//clicking the first row(EglEqFn1)and right clicking the View logic
+		//WebElement elementLocator = driver.findElementByXPath("//span[@class='ag-group-value'][1]");
+		Thread.sleep(9000);
+//		WebElement elementLocator = driver.findElementByXPath("//span[@class='ag-header-cell-text' and text()='eglRoll_up_Demo_filed']");
+//		builder.contextClick(elementLocator).perform();
+//		driver.findElementByXPath("//span[text()='View Logic']").click();
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+        //js.executeScript("window.scrollBy(1000,1000)");
+		List<WebElement> elements = driver.findElementsByXPath("//span[@class='ag-header-cell-text']");
+		//span[@class='ag-header-cell-text' and text()='eglRoll_up_Demo_filed']
+		js.executeScript("arguments[0].scrollIntoView();", elements);
+		for (int i=1; i<=elements.size(); i++)
+		{	
+			
+			System.out.println(elements.get(i).getText());
+			if (elements.get(i).getText() == "eglRoll_up_Demo_filed")
+			{
+				builder.contextClick(elements.get(i)).perform();
+				System.out.println(elements.get(i).getText());
+				System.out.println("Inside");
+				driver.findElementByXPath("//span[text()='View page source']").click();
+				Thread.sleep(3000);
+			}
+		}
+		
+		//builder.contextClick(elementLocator).perform();
+		//driver.findElementByXPath("//span[text()='View Logic']").click();
+//		driver.findElementByXPath("//span[text()='View page source']").click();
+//		Thread.sleep(3000);
 		return this;
 		                
 	}

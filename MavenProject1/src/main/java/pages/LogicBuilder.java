@@ -13,7 +13,7 @@ public class LogicBuilder extends Annotations {
 
 	public LogicBuilder doCalculation() throws IOException, InterruptedException {
 		
-		System.out.println("Logic builder concepts");
+		System.out.println("Logic builder basic concepts");
 		Actions builder = new Actions(driver);
 		WebElement elementLocator = driver.findElementByXPath("//span[@class='ag-group-value'][1]");
 		builder.contextClick(elementLocator).perform();
@@ -106,6 +106,11 @@ public class LogicBuilder extends Annotations {
 		
         
 		return this;
+		
+	}
+
+	public void ClickonAnalyse() {
+		// TODO Auto-generated method stub
 		
 	}
 }
