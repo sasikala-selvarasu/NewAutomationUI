@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="29307" started-at="2019-10-18T08:28:23Z" finished-at="2019-10-18T08:28:52Z">
+  <suite name="Suite" duration-ms="111790" started-at="2019-10-18T12:37:33Z" finished-at="2019-10-18T12:39:25Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="29307" started-at="2019-10-18T08:28:23Z" finished-at="2019-10-18T08:28:52Z">
+    <test name="Test" duration-ms="111790" started-at="2019-10-18T12:37:33Z" finished-at="2019-10-18T12:39:25Z">
       <class name="testcases.LoginPage_Testcases">
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.LoginPage_Testcases@6950e31]" name="login" is-config="true" duration-ms="4651" started-at="2019-10-18T08:28:24Z" finished-at="2019-10-18T08:28:29Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.LoginPage_Testcases@52f759d7]" name="login" is-config="true" duration-ms="4579" started-at="2019-10-18T12:37:34Z" finished-at="2019-10-18T12:37:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="loginLogout(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.LoginPage_Testcases@6950e31]" name="loginLogout" duration-ms="4291" started-at="2019-10-18T08:28:29Z" data-provider="fetchData" finished-at="2019-10-18T08:28:33Z">
+        <test-method status="PASS" signature="loginLogout(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.LoginPage_Testcases@52f759d7]" name="loginLogout" duration-ms="5570" started-at="2019-10-18T12:37:39Z" data-provider="fetchData" finished-at="2019-10-18T12:37:45Z">
           <params>
             <param index="0">
               <value>
@@ -32,25 +32,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLogout -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.LoginPage_Testcases@6950e31]" name="closeBrowser" is-config="true" duration-ms="1139" started-at="2019-10-18T08:28:33Z" finished-at="2019-10-18T08:28:34Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.LoginPage_Testcases@52f759d7]" name="closeBrowser" is-config="true" duration-ms="1109" started-at="2019-10-18T12:37:45Z" finished-at="2019-10-18T12:37:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testcases.LoginPage_Testcases -->
       <class name="testcases.HomePage_Testcases">
-        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.HomePage_Testcases@b7dd107]" name="setData" is-config="true" duration-ms="17" started-at="2019-10-18T08:28:23Z" finished-at="2019-10-18T08:28:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setData -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.LoginPage_Testcases@6950e31]" name="setData" is-config="true" duration-ms="0" started-at="2019-10-18T08:28:23Z" finished-at="2019-10-18T08:28:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setData -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.HomePage_Testcases@b7dd107]" name="login" is-config="true" duration-ms="3656" started-at="2019-10-18T08:28:34Z" finished-at="2019-10-18T08:28:38Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.HomePage_Testcases@7cbd213e]" name="login" is-config="true" duration-ms="3601" started-at="2019-10-18T12:37:46Z" finished-at="2019-10-18T12:37:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="HomePage(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.HomePage_Testcases@b7dd107]" name="HomePage" duration-ms="13443" started-at="2019-10-18T08:28:38Z" data-provider="fetchData" finished-at="2019-10-18T08:28:51Z">
+        <test-method status="PASS" signature="HomePage(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.HomePage_Testcases@7cbd213e]" name="HomePage" duration-ms="11933" started-at="2019-10-18T12:37:49Z" data-provider="fetchData" finished-at="2019-10-18T12:38:01Z">
           <params>
             <param index="0">
               <value>
@@ -69,82 +61,191 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Attrib And Risk Report2]]>
+                <![CDATA[Attrib And Risk Report]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='eagle-status-completed']/following::span[text()='Attrib And Risk Report2'])[1]"}
-  (Session info: chrome=77.0.3865.90)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'SSELVARASUW8', ip: '10.80.8.174', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}), userDataDir=C:\Users\SSELVA~1\AppData\Local\Temp\scoped_dir6676_1779327064}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:62225}, acceptInsecureCerts=false, browserVersion=77.0.3865.90, browserName=chrome, javascriptEnabled=true, platformName=windows nt, setWindowRect=true}]
-Session ID: 9e641cdfa570d9d919e69f1201c400a2
-*** Element info: {Using=xpath, value=(//div[@class='eagle-status-completed']/following::span[text()='Attrib And Risk Report2'])[1]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@class='eagle-status-completed']/following::span[text()='Attrib And Risk Report2'])[1]"}
-  (Session info: chrome=77.0.3865.90)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'SSELVARASUW8', ip: '10.80.8.174', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=77.0.3865.40 (f484704e052e0b556f8030b65b953dce96503217-refs/branch-heads/3865@{#442}), userDataDir=C:\Users\SSELVA~1\AppData\Local\Temp\scoped_dir6676_1779327064}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:62225}, acceptInsecureCerts=false, browserVersion=77.0.3865.90, browserName=chrome, javascriptEnabled=true, platformName=windows nt, setWindowRect=true}]
-Session ID: 9e641cdfa570d9d919e69f1201c400a2
-*** Element info: {Using=xpath, value=(//div[@class='eagle-status-completed']/following::span[text()='Attrib And Risk Report2'])[1]}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
-at pages.HomePage.ClickonReport(HomePage.java:42)
-at testcases.HomePage_Testcases.HomePage(HomePage_Testcases.java:49)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.HomePage_Testcases@b7dd107]" name="closeBrowser" is-config="true" duration-ms="1027" started-at="2019-10-18T08:28:51Z" finished-at="2019-10-18T08:28:52Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.HomePage_Testcases@7cbd213e]" name="closeBrowser" is-config="true" duration-ms="964" started-at="2019-10-18T12:38:01Z" finished-at="2019-10-18T12:38:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testcases.HomePage_Testcases -->
+      <class name="testcases.ReportPage_Testcases">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.ReportPage_Testcases@569cfc36]" name="login" is-config="true" duration-ms="3635" started-at="2019-10-18T12:38:54Z" finished-at="2019-10-18T12:38:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="ReportPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.ReportPage_Testcases@569cfc36]" name="ReportPage" duration-ms="26671" started-at="2019-10-18T12:38:58Z" data-provider="fetchData" finished-at="2019-10-18T12:39:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://10.130.35.58/modules/olapv3/#/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mgoodey]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[eagle1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Attrib And Risk Report]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Analysis for ]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[8000]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[4 Level Model1]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[testsasiURL]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[testkey]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[C:\Users\sselvarasux\Desktop\screenshot\Chart.png]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReportPage -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.ReportPage_Testcases@569cfc36]" name="closeBrowser" is-config="true" duration-ms="959" started-at="2019-10-18T12:39:24Z" finished-at="2019-10-18T12:39:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.ReportPage_Testcases -->
+      <class name="testcases.ResultPage_Testcases">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.ResultPage_Testcases@192d3247]" name="login" is-config="true" duration-ms="3651" started-at="2019-10-18T12:38:02Z" finished-at="2019-10-18T12:38:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="ResultPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.ResultPage_Testcases@192d3247]" name="ResultPage" duration-ms="20837" started-at="2019-10-18T12:38:06Z" data-provider="fetchData" finished-at="2019-10-18T12:38:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://10.130.35.58/modules/olapv3/#/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mgoodey]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[eagle1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Attrib And Risk Report]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Analysis for ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResultPage -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.ResultPage_Testcases@192d3247]" name="closeBrowser" is-config="true" duration-ms="993" started-at="2019-10-18T12:38:27Z" finished-at="2019-10-18T12:38:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.ResultPage_Testcases -->
+      <class name="testcases.ChartsPage_Testcases">
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.ChartsPage_Testcases@3ecd23d9]" name="setData" is-config="true" duration-ms="15" started-at="2019-10-18T12:37:33Z" finished-at="2019-10-18T12:37:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.ReportPage_Testcases@569cfc36]" name="setData" is-config="true" duration-ms="0" started-at="2019-10-18T12:37:33Z" finished-at="2019-10-18T12:37:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.HomePage_Testcases@7cbd213e]" name="setData" is-config="true" duration-ms="0" started-at="2019-10-18T12:37:33Z" finished-at="2019-10-18T12:37:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.LoginPage_Testcases@52f759d7]" name="setData" is-config="true" duration-ms="0" started-at="2019-10-18T12:37:33Z" finished-at="2019-10-18T12:37:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.ResultPage_Testcases@192d3247]" name="setData" is-config="true" duration-ms="0" started-at="2019-10-18T12:37:33Z" finished-at="2019-10-18T12:37:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.ChartsPage_Testcases@3ecd23d9]" name="login" is-config="true" duration-ms="3666" started-at="2019-10-18T12:38:28Z" finished-at="2019-10-18T12:38:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="ChartsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.ChartsPage_Testcases@3ecd23d9]" name="ChartsPage" duration-ms="21337" started-at="2019-10-18T12:38:32Z" data-provider="fetchData" finished-at="2019-10-18T12:38:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://10.130.35.58/modules/olapv3/#/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mgoodey]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[eagle1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Attrib And Risk Report]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Analysis for ]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[C:\Users\sselvarasux\Desktop\screenshot\Chart.png]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChartsPage -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.ChartsPage_Testcases@3ecd23d9]" name="closeBrowser" is-config="true" duration-ms="1031" started-at="2019-10-18T12:38:53Z" finished-at="2019-10-18T12:38:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.ChartsPage_Testcases -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
