@@ -8,8 +8,9 @@ import wrappers.Annotations;
 
 public class ResultPage extends Annotations {
 
-	public ResultPage CheckTextCommentary(String lookStr) {
+	public ResultPage CheckTextCommentary(String lookStr) throws InterruptedException {
 		
+		Thread.sleep(10000);
 		//strong[text()='COMMENTARY']
 		String lookVal = "//u[contains(text(),'"+lookStr+"')]";
 		//String lookVal = "//u[contains(text()='"+lookStr+"')]";

@@ -32,7 +32,9 @@ public class HomePage extends Annotations {
 	}
 	public HomePage ClickonReport(String data) throws InterruptedException {
 		
-		String lookVal = "//div[@class='eagle-status-completed']/following::span[text()='"+data+"'][1]";
+		String lookVal = "(//div[@class='eagle-status-completed']/following::span[text()='"+data+"'])[1]";
+		//String lookVal = "(//div[@class='eagle-status-completed']/following::span[text()='Attrib And Risk Report'])[1]";
+		//(//div[@class='eagle-status-completed']/following::span[text()='Attrib And Risk Report'])[1]  
 		System.out.println(lookVal);
 		Thread.sleep(4000);
 		

@@ -17,11 +17,11 @@ public class DataInputProvider {
 		int cellCount = worksheet.getRow(0).getLastCellNum();
 		String[][] data = new String[rowCount][cellCount];
 		for (int i = 1; i <= rowCount; i++) {
-		XSSFRow row = worksheet.getRow(i);
-		for (int j = 0; j < cellCount; j++) {
-		XSSFCell cell = row.getCell(j);
-		data[i - 1][j] = cell.getStringCellValue();
-		}
+			XSSFRow row = worksheet.getRow(i);
+				for (int j = 0; j < cellCount; j++) {
+					XSSFCell cell = row.getCell(j);
+					data[i - 1][j] = cell.getStringCellValue();
+				}
 		}
 		workbook.close();
 		return data;

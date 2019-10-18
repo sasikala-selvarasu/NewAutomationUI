@@ -23,7 +23,7 @@ public class TC001Login extends Annotations {
 
 	@BeforeTest
 	public void setData() {
-		excelFileName = "TC001 - Copy";
+		excelFileName = "Testcase002";
 
 	}
 
@@ -37,13 +37,17 @@ public class TC001Login extends Annotations {
 		String[] result = ReportNames.split(",");
 		String[] expResults = ExpectedStrs.split(",");
 		String[] TimeOut = Timeouts.split(",");
-
+		
+//		System.out.println (result);
+//		System.out.println (expResults);
+//		System.out.println (TimeOut);
+		
 		for (int x = 0; x < result.length; x++) {
 
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			new HomePage()
 			.ClickOnInbox()
-			.ClickonReport(ReportNames)
+			.ClickonReport(result[x])
 			.ClickonAnalyse();
 
 			// Thread.sleep(Integer.parseInt(TimeOut[x]) );
@@ -54,7 +58,7 @@ public class TC001Login extends Annotations {
 		//	 .LogicbuilderPage();
 
 			 new ResultPage()
-			 .CheckTextCommentary(ExpectedStrs)
+			 .CheckTextCommentary(expResults[x])
 			 .ClickGoCharts();
 			 
 			 
