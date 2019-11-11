@@ -33,7 +33,9 @@ public class ReportPage_Testcases extends Annotations {
 			throws InterruptedException, IOException {
 		
 
-		new LoginPage().enterUrl(Url).enterUserName(userName).enterPassword(password).clickLoginButton();
+		new LoginPage() .enterUrl(Url) .enterUserName(userName) .enterPassword(password).clickLoginButton(); 
+		
+		
 
 		String[] result = ReportNames.split(",");
 		String[] expResults = ExpectedStrs.split(",");

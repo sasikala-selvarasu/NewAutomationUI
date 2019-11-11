@@ -21,6 +21,7 @@ public class DataInputProvider {
 				for (int j = 0; j < cellCount; j++) {
 					XSSFCell cell = row.getCell(j);
 					data[i - 1][j] = cell.getStringCellValue();
+					//System.out.println (data[i-1][j]);
 				}
 		}
 		workbook.close();

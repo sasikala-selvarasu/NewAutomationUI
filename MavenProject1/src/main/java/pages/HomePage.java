@@ -9,6 +9,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Reporter;
+
 import wrappers.Annotations;
 
 public class HomePage extends Annotations {
@@ -25,7 +27,8 @@ public class HomePage extends Annotations {
 		System.getProperty(title);
 		System.out.println("The title is :" + title);
 		System.out.println("The current page URL is: " + inboxUrl);
-		System.out.println("Successfully clicked the Inbox ");
+		Reporter.log("<font color='green'> Clicked the inbox tab</font>", true);
+	
 			
 		return this;
 		
@@ -35,6 +38,7 @@ public class HomePage extends Annotations {
 		String lookVal = "(//div[@class='eagle-status-completed']/following::span[text()='"+data+"'])[1]";
 		//String lookVal = "(//div[@class='eagle-status-completed']/following::span[text()='Attrib And Risk Report'])[1]";
 		//(//div[@class='eagle-status-completed']/following::span[text()='Attrib And Risk Report'])[1]  
+		Reporter.log("<font color='green'> Report has been clicked</font>", true);
 		System.out.println(lookVal);
 		Thread.sleep(4000);
 		
@@ -59,7 +63,7 @@ public class HomePage extends Annotations {
 		}
 		else {
 		
-			System.out.println("Inside click report == false");
+			Reporter.log("<font color='red'>Inside click report == false</font>", true);
 			builder.doubleClick(elementLocator).perform();
 //			ClickReport = true;
 		}
@@ -74,6 +78,7 @@ public class HomePage extends Annotations {
 		
 		//assertEquals(data, "M2_PrototypeWithChart");
 		System.out.println("trying to click the tabs");
+		Reporter.log("<font color='green'>trying to click the tabs</font>", true);
 		System.out.println(data);
 		//if(data.equals("M2_PrototypeWithChart")){
 		if(data.equals("Attrib And Risk Report")){	
@@ -115,7 +120,7 @@ public class HomePage extends Annotations {
 		
 		driver.findElementByXPath("//div[text()=' Analyse ']").click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		System.out.println("Clicked the ANALYSE Link on top");
+		Reporter.log("<font color='green'>Clicked the ANALYSE Link on top Right hand side</font>", true);
 		return this;
 	
 	}

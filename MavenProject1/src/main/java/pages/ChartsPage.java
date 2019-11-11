@@ -2,11 +2,11 @@ package pages;
 
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Paths;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.testng.Reporter;
+
 import wrappers.Annotations;
 
 public class ChartsPage extends Annotations {
@@ -28,11 +28,11 @@ public class ChartsPage extends Annotations {
 		        {
 		        	DestFile.delete();
 		        	//DestFile.deleteOnExit();
-		        	System.out.println("Old files are deleted");
+		        	Reporter.log("<font color='green'>Old files are deleted</font>", true);
 		        }
 		        else {
-		        	System.out.println("File does not exist to delete");
-		        }
+		        	Reporter.log("<font color='red'>File does not exist to delete</font>", true);
+		        	 }
 //		        if(DestFile.exists()) {
 //		        	
 //		        FileUtils.forceDelete(DestFile);
@@ -44,8 +44,9 @@ public class ChartsPage extends Annotations {
 //		        }
                 FileUtils.copyFile(SrcFile, DestFile);
                 System.out.println("Screen shot has been taken into this path :" +fileWithPath);
+                Reporter.log("<font color='green'>Screen shot has been taken into this path</font>", true);
                 return this;
-		
+                         
                 
 	}
 }

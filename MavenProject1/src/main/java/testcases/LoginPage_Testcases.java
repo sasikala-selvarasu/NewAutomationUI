@@ -23,7 +23,7 @@ public class LoginPage_Testcases extends Annotations {
 
 	@BeforeTest
 	public void setData() {
-		excelFileName = "Loginpage";
+		excelFileName = "LoginPage";
 
 	}
 
