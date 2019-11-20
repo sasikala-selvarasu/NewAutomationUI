@@ -30,8 +30,10 @@ public class ResultPage extends Annotations {
 		return this;	
 		}
 	
-	public ChartsPage ClickGoCharts() {
+	public ChartsPage ClickGoCharts() throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 		driver.findElementByXPath("//div[text()=' Charts ']").click();
+		Thread.sleep(10000);
 		Reporter.log("<font color='green'>Clicked the CHARTS Link in top right hand side</font>", true);
 		return new ChartsPage();
 		
