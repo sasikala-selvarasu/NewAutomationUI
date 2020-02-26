@@ -1,0 +1,6 @@
+com.autoBot.pages
+com.autoBot.selenium.api.base
+com.autoBot.selenium.api.design
+com.autoBot.testcases
+com.autoBot.testng.api.base
+utils
