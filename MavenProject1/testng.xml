@@ -3,15 +3,13 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-    	<class name ="testcases.Schw15r2dw003_Testcases"/>
+<!--     	<class name ="testcases.Schw15r2dw003_Testcases"/> -->
  		<class name ="testcases.LoginPage_Testcases"/>
 		<class name ="testcases.HomePage_Testcases"/>
 		<class name ="testcases.ResultPage_Testcases"/>
 		<class name ="testcases.ChartsPage_Testcases"/>
 		<class name ="testcases.ReportPage_Testcases"/>
- 		   
-    		
-		      
+   				      
     </classes> 
     </test> <!-- Test -->
 </suite> <!-- Suite -->
