@@ -1,6 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
+    <line>
+      <![CDATA[The Browser is opened now]]>
+    </line>
+    <line>
+      <![CDATA[The Browser is maximized now]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>The Web URL is opened now</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>The User Name has entered</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>Password has entered</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>Logged into the application</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'> Clicked the inbox tab</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'> Report has been clicked</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='red'>Inside click report == false</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>trying to click the tabs</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>Clicked the ANALYSE Link on top Right hand side</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>Checking the COMMENTARY in ANALYSE page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>Expected String is present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>Clicked the CHARTS Link in top right hand side</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>Old files are deleted</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>Screen shot has been taken into this path</font>]]>
+    </line>
+    <line>
+      <![CDATA[The Browser is opened now]]>
+    </line>
+    <line>
+      <![CDATA[The Browser is maximized now]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>The Web URL is opened now</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>The User Name has entered</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>Password has entered</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>Logged into the application</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'> Clicked the inbox tab</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'> Report has been clicked</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='red'>Inside click report == false</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>trying to click the tabs</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>Clicked the ANALYSE Link on top Right hand side</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>Checking the COMMENTARY in ANALYSE page</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>Expected String is present</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>Clicked the CHARTS Link in top right hand side</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='red'>File does not exist to delete</font>]]>
+    </line>
+    <line>
+      <![CDATA[<font color='green'>Screen shot has been taken into this path</font>]]>
+    </line>
     <line>
       <![CDATA[The Browser is opened now]]>
     </line>
@@ -203,12 +299,12 @@
       <![CDATA[<font color='green'>Report commentry details has updated</font>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="164695" started-at="2020-03-03T07:23:46Z" finished-at="2020-03-03T07:26:31Z">
+  <suite name="Suite" duration-ms="245884" started-at="2020-03-10T10:09:17Z" finished-at="2020-03-10T10:13:23Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="164695" started-at="2020-03-03T07:23:46Z" finished-at="2020-03-03T07:26:31Z">
+    <test name="Test" duration-ms="245884" started-at="2020-03-10T10:09:17Z" finished-at="2020-03-10T10:13:23Z">
       <class name="testcases.LoginPage_Testcases">
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.LoginPage_Testcases@52f759d7]" name="login" is-config="true" duration-ms="5527" started-at="2020-03-03T07:23:48Z" finished-at="2020-03-03T07:23:53Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.LoginPage_Testcases@1d371b2d]" name="login" is-config="true" duration-ms="3613" started-at="2020-03-10T10:10:38Z" finished-at="2020-03-10T10:10:42Z">
           <reporter-output>
             <line>
               <![CDATA[The Browser is opened now]]>
@@ -218,7 +314,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="loginLogout(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.LoginPage_Testcases@52f759d7]" name="loginLogout" duration-ms="5520" started-at="2020-03-03T07:23:53Z" data-provider="fetchData" finished-at="2020-03-03T07:23:59Z">
+        <test-method status="PASS" signature="loginLogout(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.LoginPage_Testcases@1d371b2d]" name="loginLogout" duration-ms="5190" started-at="2020-03-10T10:10:42Z" data-provider="fetchData" finished-at="2020-03-10T10:10:47Z">
           <params>
             <param index="0">
               <value>
@@ -251,13 +347,13 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginLogout -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.LoginPage_Testcases@52f759d7]" name="closeBrowser" is-config="true" duration-ms="1489" started-at="2020-03-03T07:23:59Z" finished-at="2020-03-03T07:24:00Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.LoginPage_Testcases@1d371b2d]" name="closeBrowser" is-config="true" duration-ms="953" started-at="2020-03-10T10:10:47Z" finished-at="2020-03-10T10:10:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testcases.LoginPage_Testcases -->
       <class name="testcases.HomePage_Testcases">
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.HomePage_Testcases@7cbd213e]" name="login" is-config="true" duration-ms="4311" started-at="2020-03-03T07:24:00Z" finished-at="2020-03-03T07:24:05Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.HomePage_Testcases@543c6f6d]" name="login" is-config="true" duration-ms="3636" started-at="2020-03-10T10:10:48Z" finished-at="2020-03-10T10:10:52Z">
           <reporter-output>
             <line>
               <![CDATA[The Browser is opened now]]>
@@ -267,7 +363,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="HomePage(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.HomePage_Testcases@7cbd213e]" name="HomePage" duration-ms="14886" started-at="2020-03-03T07:24:05Z" data-provider="fetchData" finished-at="2020-03-03T07:24:20Z">
+        <test-method status="PASS" signature="HomePage(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.HomePage_Testcases@543c6f6d]" name="HomePage" duration-ms="11607" started-at="2020-03-10T10:10:52Z" data-provider="fetchData" finished-at="2020-03-10T10:11:03Z">
           <params>
             <param index="0">
               <value>
@@ -320,13 +416,13 @@
             </line>
           </reporter-output>
         </test-method> <!-- HomePage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.HomePage_Testcases@7cbd213e]" name="closeBrowser" is-config="true" duration-ms="1120" started-at="2020-03-03T07:24:20Z" finished-at="2020-03-03T07:24:21Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.HomePage_Testcases@543c6f6d]" name="closeBrowser" is-config="true" duration-ms="891" started-at="2020-03-10T10:11:03Z" finished-at="2020-03-10T10:11:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testcases.HomePage_Testcases -->
       <class name="testcases.ReportPage_Testcases">
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.ReportPage_Testcases@569cfc36]" name="login" is-config="true" duration-ms="4429" started-at="2020-03-03T07:25:44Z" finished-at="2020-03-03T07:25:48Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.ReportPage_Testcases@7403c468]" name="login" is-config="true" duration-ms="3617" started-at="2020-03-10T10:12:42Z" finished-at="2020-03-10T10:12:46Z">
           <reporter-output>
             <line>
               <![CDATA[The Browser is opened now]]>
@@ -336,7 +432,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="ReportPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.ReportPage_Testcases@569cfc36]" name="ReportPage" duration-ms="41627" started-at="2020-03-03T07:25:48Z" data-provider="fetchData" finished-at="2020-03-03T07:26:30Z">
+        <test-method status="PASS" signature="ReportPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.ReportPage_Testcases@7403c468]" name="ReportPage" duration-ms="36000" started-at="2020-03-10T10:12:46Z" data-provider="fetchData" finished-at="2020-03-10T10:13:22Z">
           <params>
             <param index="0">
               <value>
@@ -446,13 +542,13 @@
             </line>
           </reporter-output>
         </test-method> <!-- ReportPage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.ReportPage_Testcases@569cfc36]" name="closeBrowser" is-config="true" duration-ms="1076" started-at="2020-03-03T07:26:30Z" finished-at="2020-03-03T07:26:31Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.ReportPage_Testcases@7403c468]" name="closeBrowser" is-config="true" duration-ms="869" started-at="2020-03-10T10:13:22Z" finished-at="2020-03-10T10:13:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testcases.ReportPage_Testcases -->
       <class name="testcases.ResultPage_Testcases">
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.ResultPage_Testcases@192d3247]" name="login" is-config="true" duration-ms="4263" started-at="2020-03-03T07:24:21Z" finished-at="2020-03-03T07:24:25Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.ResultPage_Testcases@13eb8acf]" name="login" is-config="true" duration-ms="3662" started-at="2020-03-10T10:11:04Z" finished-at="2020-03-10T10:11:08Z">
           <reporter-output>
             <line>
               <![CDATA[The Browser is opened now]]>
@@ -462,7 +558,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="ResultPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.ResultPage_Testcases@192d3247]" name="ResultPage" duration-ms="35040" started-at="2020-03-03T07:24:25Z" data-provider="fetchData" finished-at="2020-03-03T07:25:00Z">
+        <test-method status="PASS" signature="ResultPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.ResultPage_Testcases@13eb8acf]" name="ResultPage" duration-ms="33968" started-at="2020-03-10T10:11:08Z" data-provider="fetchData" finished-at="2020-03-10T10:11:42Z">
           <params>
             <param index="0">
               <value>
@@ -529,33 +625,13 @@
             </line>
           </reporter-output>
         </test-method> <!-- ResultPage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.ResultPage_Testcases@192d3247]" name="closeBrowser" is-config="true" duration-ms="1133" started-at="2020-03-03T07:25:00Z" finished-at="2020-03-03T07:25:01Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.ResultPage_Testcases@13eb8acf]" name="closeBrowser" is-config="true" duration-ms="873" started-at="2020-03-10T10:11:42Z" finished-at="2020-03-10T10:11:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testcases.ResultPage_Testcases -->
-      <class name="testcases.ChartsPage_Testcases">
-        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.ChartsPage_Testcases@3ecd23d9]" name="setData" is-config="true" duration-ms="21" started-at="2020-03-03T07:23:46Z" finished-at="2020-03-03T07:23:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setData -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.HomePage_Testcases@7cbd213e]" name="setData" is-config="true" duration-ms="0" started-at="2020-03-03T07:23:46Z" finished-at="2020-03-03T07:23:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setData -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.LoginPage_Testcases@52f759d7]" name="setData" is-config="true" duration-ms="0" started-at="2020-03-03T07:23:46Z" finished-at="2020-03-03T07:23:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setData -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.ReportPage_Testcases@569cfc36]" name="setData" is-config="true" duration-ms="0" started-at="2020-03-03T07:23:46Z" finished-at="2020-03-03T07:23:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setData -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.ResultPage_Testcases@192d3247]" name="setData" is-config="true" duration-ms="0" started-at="2020-03-03T07:23:46Z" finished-at="2020-03-03T07:23:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setData -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.ChartsPage_Testcases@3ecd23d9]" name="login" is-config="true" duration-ms="4230" started-at="2020-03-03T07:25:01Z" finished-at="2020-03-03T07:25:05Z">
+      <class name="testcases.Schw15r2dw003_Testcases">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.Schw15r2dw003_Testcases@4e718207]" name="login" is-config="true" duration-ms="4409" started-at="2020-03-10T10:09:18Z" finished-at="2020-03-10T10:09:22Z">
           <reporter-output>
             <line>
               <![CDATA[The Browser is opened now]]>
@@ -565,7 +641,227 @@
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="ChartsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.ChartsPage_Testcases@3ecd23d9]" name="ChartsPage" duration-ms="37322" started-at="2020-03-03T07:25:05Z" data-provider="fetchData" finished-at="2020-03-03T07:25:43Z">
+        <test-method status="PASS" signature="loginLogout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Schw15r2dw003_Testcases@4e718207]" name="loginLogout" duration-ms="35238" started-at="2020-03-10T10:09:22Z" data-provider="fetchData" finished-at="2020-03-10T10:09:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://schw15r2dw003.eagleinvsys.com/modules/olap/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mgoodey]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[eagle1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Attrib And Risk Report]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Analysis for ]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[8000]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[\\sselvarasuw8\screenshot\chartsNew.png]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<font color='green'>The Web URL is opened now</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>The User Name has entered</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>Password has entered</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>Logged into the application</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'> Clicked the inbox tab</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'> Report has been clicked</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='red'>Inside click report == false</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>trying to click the tabs</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>Clicked the ANALYSE Link on top Right hand side</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>Checking the COMMENTARY in ANALYSE page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>Expected String is present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>Clicked the CHARTS Link in top right hand side</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>Old files are deleted</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>Screen shot has been taken into this path</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginLogout -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.Schw15r2dw003_Testcases@4e718207]" name="closeBrowser" is-config="true" duration-ms="1015" started-at="2020-03-10T10:09:57Z" finished-at="2020-03-10T10:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.Schw15r2dw003_Testcases@4e718207]" name="login" is-config="true" duration-ms="3624" started-at="2020-03-10T10:09:58Z" finished-at="2020-03-10T10:10:02Z">
+          <reporter-output>
+            <line>
+              <![CDATA[The Browser is opened now]]>
+            </line>
+            <line>
+              <![CDATA[The Browser is maximized now]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="loginLogout(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.Schw15r2dw003_Testcases@4e718207]" name="loginLogout" duration-ms="35091" started-at="2020-03-10T10:10:02Z" data-provider="fetchData" finished-at="2020-03-10T10:10:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://schw15r2dw003.eagleinvsys.com/modules/olap/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[engage2020]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[eagle1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Attrib N Risk Report]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Analysis for ]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[8000]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[\\sselvarasuw8\screenshot\chartsNew_engage.png]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<font color='green'>The Web URL is opened now</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>The User Name has entered</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>Password has entered</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>Logged into the application</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'> Clicked the inbox tab</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'> Report has been clicked</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='red'>Inside click report == false</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>trying to click the tabs</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>Clicked the ANALYSE Link on top Right hand side</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>Checking the COMMENTARY in ANALYSE page</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>Expected String is present</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>Clicked the CHARTS Link in top right hand side</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='red'>File does not exist to delete</font>]]>
+            </line>
+            <line>
+              <![CDATA[<font color='green'>Screen shot has been taken into this path</font>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginLogout -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.Schw15r2dw003_Testcases@4e718207]" name="closeBrowser" is-config="true" duration-ms="875" started-at="2020-03-10T10:10:37Z" finished-at="2020-03-10T10:10:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.Schw15r2dw003_Testcases -->
+      <class name="testcases.ChartsPage_Testcases">
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.ChartsPage_Testcases@51c8530f]" name="setData" is-config="true" duration-ms="15" started-at="2020-03-10T10:09:17Z" finished-at="2020-03-10T10:09:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.Schw15r2dw003_Testcases@4e718207]" name="setData" is-config="true" duration-ms="0" started-at="2020-03-10T10:09:17Z" finished-at="2020-03-10T10:09:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.HomePage_Testcases@543c6f6d]" name="setData" is-config="true" duration-ms="0" started-at="2020-03-10T10:09:17Z" finished-at="2020-03-10T10:09:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.ResultPage_Testcases@13eb8acf]" name="setData" is-config="true" duration-ms="0" started-at="2020-03-10T10:09:17Z" finished-at="2020-03-10T10:09:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.LoginPage_Testcases@1d371b2d]" name="setData" is-config="true" duration-ms="0" started-at="2020-03-10T10:09:17Z" finished-at="2020-03-10T10:09:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.ReportPage_Testcases@7403c468]" name="setData" is-config="true" duration-ms="0" started-at="2020-03-10T10:09:17Z" finished-at="2020-03-10T10:09:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.ChartsPage_Testcases@51c8530f]" name="login" is-config="true" duration-ms="3778" started-at="2020-03-10T10:11:43Z" finished-at="2020-03-10T10:11:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[The Browser is opened now]]>
+            </line>
+            <line>
+              <![CDATA[The Browser is maximized now]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="ChartsPage(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.ChartsPage_Testcases@51c8530f]" name="ChartsPage" duration-ms="54940" started-at="2020-03-10T10:11:46Z" data-provider="fetchData" finished-at="2020-03-10T10:12:41Z">
           <params>
             <param index="0">
               <value>
@@ -643,7 +939,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ChartsPage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.ChartsPage_Testcases@3ecd23d9]" name="closeBrowser" is-config="true" duration-ms="1019" started-at="2020-03-03T07:25:43Z" finished-at="2020-03-03T07:25:44Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.ChartsPage_Testcases@51c8530f]" name="closeBrowser" is-config="true" duration-ms="938" started-at="2020-03-10T10:12:41Z" finished-at="2020-03-10T10:12:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

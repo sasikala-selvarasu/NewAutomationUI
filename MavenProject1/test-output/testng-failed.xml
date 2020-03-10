@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testcases.LoginPage_Testcases">
+      <class name="testcases.Schw15r2dw003_Testcases">
         <methods>
-          <include name="setData"/>
           <include name="login"/>
           <include name="closeBrowser"/>
-          <include name="loginLogout"/>
+          <include name="setData"/>
+          <include name="loginLogout" invocation-numbers="1"/>
         </methods>
-      </class> <!-- testcases.LoginPage_Testcases -->
+      </class> <!-- testcases.Schw15r2dw003_Testcases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

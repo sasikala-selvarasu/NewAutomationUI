@@ -18,7 +18,8 @@ public class LoginPage extends Annotations {
 	
 		public LoginPage enterUserName(String data) {
 			System.out.println (data);
-			if(data.matches("mgoodey")) {
+			//if(data.matches("mgoodey")) {
+			if(data.matches(data)) {
 				driver.findElementByXPath("//input[@formcontrolname='username']").sendKeys(data);
 				//Reporter.log("<font color='red'> Hello world </font>");
 				Reporter.log("<font color='green'>The User Name has entered</font>", true);
