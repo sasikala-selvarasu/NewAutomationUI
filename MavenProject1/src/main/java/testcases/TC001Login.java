@@ -23,13 +23,13 @@ public class TC001Login extends Annotations {
 
 	@BeforeTest
 	public void setData() {
-		excelFileName = "Testcase002";
+		excelFileName = "Testcases_for_schw15r2dw003";
 
 	}
 
 	@Test(dataProvider = "fetchData")
 	public void loginLogout(String Url, String userName, String password, String ReportNames, String ExpectedStrs,
-			String Timeouts, String ReportsTabReport, String URL, String Key, String fileWithPath)
+			String Timeouts, String fileWithPath)
 			throws InterruptedException, IOException {
 
 		new LoginPage().enterUrl(Url).enterUserName(userName).enterPassword(password).clickLoginButton();
@@ -57,22 +57,28 @@ public class TC001Login extends Annotations {
 		//	 .doCalculation()
 		//	 .LogicbuilderPage();
 
-			 new ResultPage()
-			 .CheckTextCommentary(expResults[x])
-			 .ClickGoCharts();
-			 
-			 
+		//	 new ResultPage()
+		//	 .CheckTextCommentary(expResults[x])
+		//	 .ClickGoCharts();			 		 
 			 //.CloseReportTab();
 
 			 new ChartsPage()
 			 .ClickCharts(fileWithPath);
 
-			 new ReportTabpage()
-			 .ClickOnReports()
-			 .ClickOnReportTabReport(ReportsTabReport);
-			  bEditMode = true;
-			 new ReportResultPage()
-			 .CommentarySetGet(bEditMode, URL, Key);
+//			 new ReportTabpage()
+//			 .ClickOnReports()
+//			 .ClickOnProtoType(ReportsTabReport);
+//			 new HomePage()
+//			 .ClickOnInbox()
+//			 .ClickonReport(ReportNames);
+//		//	 new ReportTabpage()
+		//	 .ClickOnReports()
+		//	 .ClickOnReportTabReport(ReportsTabReport);
+			 
+			 		 
+		//	 bEditMode = true;
+		//	 new ReportResultPage()
+		//	 .CommentarySetGet(bEditMode, URL, Key);
 
 			// Thread.sleep(Integer.parseInt(TimeOut[x]) );
 

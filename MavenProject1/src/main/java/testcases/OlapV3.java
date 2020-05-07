@@ -18,12 +18,12 @@ import pages.ReportTabpage;
 
 //import wrappers.Annotations;
 
-public class Schw15r2dw003_Testcases extends Annotations {
+public class OlapV3 extends Annotations {
 	Boolean bEditMode;
 
 	@BeforeTest
 	public void setData() {
-		excelFileName = "Testcases_for_schw15r2dw003";
+		excelFileName = "Testcase002_SummaryTabCases";
 
 	}
 
@@ -57,9 +57,9 @@ public class Schw15r2dw003_Testcases extends Annotations {
 		//	 .doCalculation()
 		//	 .LogicbuilderPage();
 
-			 new ResultPage()
-			 .CheckTextCommentary(expResults[x])
-			 .ClickGoCharts();
+			// new ResultPage()
+			// .CheckTextCommentary(expResults[x])
+		 //.ClickGoCharts();
 			 
 			 
 			 //.CloseReportTab();
@@ -76,11 +76,11 @@ public class Schw15r2dw003_Testcases extends Annotations {
 
 			// Thread.sleep(Integer.parseInt(TimeOut[x]) );
 
-			// new ReportTabpage()
-			// .ClickOnReports()
-			// .ClickOnReportTabReport(ReportsTabReport);
-			// bEditMode = false;
-			// new ReportResultPage()
+//			 new ReportTabpage()
+//			 .ClickOnReports()
+//			 .ClickOnReportTabReport(ReportsTabReport);
+//			 bEditMode = false;
+//			 new ReportResultPage()
 //			.CommentarySetGet(bEditMode, URL, Key);
 
 			 driver.close();

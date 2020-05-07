@@ -81,7 +81,8 @@ public class HomePage extends Annotations {
 		Reporter.log("<font color='green'>trying to click the tabs</font>", true);
 		System.out.println(data);
 		//if(data.equals("M2_PrototypeWithChart")){
-		if(data.equals("Attrib And Risk Report")){	
+		//if(data.equals("Attrib And Risk Report")){	
+		if(data.equals(data)){
 			System.out.println("It is clicked the first tab");
 			System.out.println("Now going to check the logic builder cases");
 		
@@ -105,8 +106,14 @@ public class HomePage extends Annotations {
 			String tabFiveText = driver.findElementByXPath("//div[text()='5. Use the de-levered returns (M2) in Brinson Fachler attribution']").getText();
 			System.out.println("Tab Five text is:" +tabFiveText);
 			
-			Thread.sleep(6000);*/
-									
+			Thread.sleep(6000); */
+
+			//new code adding for clicking the Summary tab in INBOX 
+
+		//	driver.findElementByXPath("//span[contains(@aria-describedby, 'cdk-describedby-message') and text()='Summary']").click();
+						
+		//	System.out.println("Prototype has been matched");
+			
 		}		
 
 		return this;
